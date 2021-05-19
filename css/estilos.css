@@ -10,6 +10,16 @@ body{
   width: 100vw;
   display: flex;
   flex-direction: row;
+  background-image: url("/img/gatos.jpg");
+  transition: all 1s;
+}
+
+.contenedor-banda {
+  flex: 1;
+}
+
+.contenedor-banda:hover .banda {
+  height: 0vh;
 }
 
 .banda {
@@ -20,7 +30,8 @@ body{
   justify-content: center;
   align-items: center;
   transition: color 0.2s,
-              background-color 1.5s;
+              background-color 1.5s,
+              height 1s;
 }
 
 .banda:hover .texto-banda{
@@ -28,11 +39,11 @@ body{
   transform:rotate(360deg);
 }
 
-.banda:nth-child(1){background-color: #00FFFF;}
-.banda:nth-child(2){background-color: #00DDDD;}
-.banda:nth-child(3){background-color: #00CCCC;}
-.banda:nth-child(4){background-color: #00BBBB;}
-.banda:nth-child(5){background-color: #00AAAA;}
+.contenedor-banda:nth-child(1) .banda {background-color: #00FFFF;}
+.contenedor-banda:nth-child(2) .banda {background-color: #00DDDD;}
+.contenedor-banda:nth-child(3) .banda {background-color: #00CCCC;}
+.contenedor-banda:nth-child(4) .banda {background-color: #00BBBB;}
+.contenedor-banda:nth-child(5) .banda {background-color: #00AAAA;}
 
 .banda:hover{
   background-color: #000;
