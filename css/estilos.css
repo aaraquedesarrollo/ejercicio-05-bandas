@@ -20,3 +20,9 @@ body{
   justify-content: center;
   align-items: center;
 }
+.banda:nth-child(1){background-color: #00FFFF;}
+.banda:nth-child(2){background-color: #00DDDD;}
+.banda:nth-child(3){background-color: #00CCCC;}
+.banda:nth-child(4){background-color: #00BBBB;}
+.banda:nth-child(5){background-color: #00AAAA;}
+
