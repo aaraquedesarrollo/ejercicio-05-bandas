@@ -19,7 +19,9 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: all 0.2s;
+  transition: color 0.2s,
+              background-color 1.5s;
 }
 .banda:hover{
   background-color: #000 !important;
@@ -32,7 +34,7 @@ body{
 }
 
 .banda:hover .texto-banda{
-  transition: all 0.5s;
+  transition: all 2s;
   transform:rotate(360deg);
 }
 
